@@ -1,10 +1,15 @@
 Update Scanner Release Notes
 ============================
 
+3.2.2:
+------
+* Fixed: Support for multiprocess Firefox (Electrolysis) (#29)
+
 3.2.1: (23 November 2014)
 ------
 * Feature: Build script improvements for dev builds
-* Fixed: Addon Compatibility Check improvements (#25)
+* Fixed: Reduced namespace footprint (#25)
+* Fixed: Minor compatibility fixes
 
 3.2.0: (20 September 2014)
 ------
