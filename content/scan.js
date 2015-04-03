@@ -311,12 +311,14 @@ scanner : function()
                     status = usc.STATUS_ERROR;
                 }
                 if (page.keywords != "") {
-			 	   var regKeywords = new RegExp(page.keywords,"g");
-				   if (regKeywords.test(httpreqResponseText))
-			  		 status = kUSc_STATUS_CHANGE;
-			 	}            } catch (e) {
+					var keywords = me._replacecommas(page.keywords);
+					var regKeywords = new RegExp(keywords,"g");
+					if (regKeywords.test(httpreqResponseText))
+						status = usc.STATUS_CHANGE;
+			 	}
+			} catch (e) {
                 status = usc.STATUS_ERROR;
-            }
+              }
             changedCallback(page.id, httpreqResponseText, status,
                             httpreqStatusText, httpreqHeaderText);
             me._getNextPage();
@@ -427,6 +429,11 @@ scanner : function()
     this._stripNumbers = function(content)
     {
         return content.replace(/[0-9\,\.]*/g,"")
+    }
+    
+    this._replacecommas = function(content)
+    {
+        return content.replace(/\,/g,"|")
     }
 
     this._getEncoding = function(header, content)
