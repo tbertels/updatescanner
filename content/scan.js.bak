@@ -375,7 +375,7 @@ scanner : function()
     }
 
     this._uscanItem = function(id, title, url, content, threshold,
-                   ignoreNumbers, keywords, encoding)
+                   ignoreNumbers, encoding)
     {
         this.id = id;
         this.title = title;
@@ -383,7 +383,6 @@ scanner : function()
         this.content = content;
         this.threshold = threshold;
         this.ignoreNumbers = ignoreNumbers;
-        this.keywords = keywords;
         this.encoding = encoding;
     }
 

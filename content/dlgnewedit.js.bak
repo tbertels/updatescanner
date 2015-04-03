@@ -111,8 +111,6 @@ initDialog : function()
     document.getElementById("highlightChanges").checked = args.highlightChanges;
     document.getElementById("highlightColour").color = args.highlightColour;
 
-    document.getElementById("txtkeywords").value = args.keywords;
-
     this.highlightChangesChanged();
 },
 
@@ -189,8 +187,6 @@ Ok : function()
 
     args.highlightChanges = document.getElementById("highlightChanges").checked;
     args.highlightColour = document.getElementById("highlightColour").color;
-
-    args.keywords = document.getElementById("txtkeywords").value;
 
     args.ok = true;
     return true;

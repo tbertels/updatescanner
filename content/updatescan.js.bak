@@ -395,7 +395,6 @@ openEditDialog : function(id)
         UpdateScanner.Places.modifyAnno(id, UpdateScanner.Places.ANNO_IGNORE_NUMBERS, args.ignoreNumbers);
         UpdateScanner.Places.modifyAnno(id, UpdateScanner.Places.ANNO_HIGHLIGHT_CHANGES, args.highlightChanges);
         UpdateScanner.Places.modifyAnno(id, UpdateScanner.Places.ANNO_HIGHLIGHT_COLOUR, args.highlightColour);
-        UpdateScanner.Places.modifyAnno(id, UpdateScanner.Places.ANNO_KEYWORDS, args.keywords);
 
         if (oldurl != args.url) {   // URL changed - reset all values
           // Create a new signature

@@ -132,15 +132,6 @@
   <checkbox id="ignoreNumbers2" label="&ignoreNumbers.label;"/>
 </groupbox>
 
-<rows>
-	<row>
-		<box align="center">
-			<label value="Keywords"/>
-		</box>
-		<textbox id="txtkeywords" size="50"/>
-	</row> 
-</rows>
-
 <label id="advLabel" value="&advanced.label;"
        onclick="UpdateScanner.DlgNewEdit.advancedClick();" class="text-link" />
 
